@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+class UserId
+{
+	private String UserName;
+	private String Password;
+	
+	public String getUserName()
+	{
+		return UserName;
+	}
+	
+	public String getPassword()
+	{
+		return Password;
+	}
+	
+	
+	public void setUserName(String UserName)
+	{
+		this.UserName=UserName;
+	}
+	
+	public void setPassword(String Password)
+	{
+		this.Password=Password;
+	}	
+}
+
+public class Encapsulations 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		UserId u=new UserId();
+		System.out.println("Enter the User Name");
+		String str1=sc.nextLine();
+		
+		System.out.println("Enter the Password");
+		String str2=sc.nextLine();
+		
+		u.setUserName(str1);
+		System.out.println("UserName = "+u.getUserName());
+		
+		u.setPassword(str2);
+		System.out.println("Password is "+u.getPassword());
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
