@@ -27,7 +27,7 @@ class UserId
 	}	
 }
 
-public class Encapsulations 
+public class Encapsulations
 {
 	public static void main(String[] args) 
 	{
